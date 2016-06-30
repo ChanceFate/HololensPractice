@@ -17,7 +17,7 @@ public class SpeechManager : MonoBehaviour
             this.BroadcastMessage("OnReset");
         });
 
-        keywords.Add("Drop Sphere", () =>
+        keywords.Add("Drop", () =>
         {
             var focusObject = GazeGestureManager.Instance.FocusedObject;
             if (focusObject != null)
