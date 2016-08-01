@@ -2,7 +2,13 @@
 
 public class TapToPlaceParent : MonoBehaviour
 {
-    bool placing = false;
+    bool placing = true;
+
+    // Initialize the Spatial Mapping to be visualized
+    void Start()
+    {
+        SpatialMapping.Instance.DrawVisualMeshes = true;
+    }
 
     // Called by GazeGestureManager when the user performs a Select gesture
     void OnSelect()
